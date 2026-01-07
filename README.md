@@ -3,6 +3,7 @@
 This project builds an **account-level fraud detection system** using large-scale transaction data, 
 with a focus on **behavioral feature engineering** and **risk-oriented visualization**.
 
+Due to competition constraints and data sensitivity, this repository shares analysis logic, modeling approach, and visualization results, rather than full production data or dashboards.
 ### Pipeline Overview
 1. Raw transaction cleaning & normalization (multi-currency → TWD)
 2. Account-level behavioral feature engineering
@@ -15,12 +16,7 @@ with a focus on **behavioral feature engineering** and **risk-oriented visualiza
 4. Risk output & visualization
    - Account risk scores
    - Top-N high-risk concentration analysis
-   - Power BI risk dashboards
-
-### Repository Structure
-- `src/` : Production-style feature engineering & model training scripts
-- `notebooks/` : Exploratory analysis and experiment tracking
-- `powerbi/` : Risk dashboard design (pbix + screenshots)
+   - Power BI–based risk dashboards (screenshots only)
 
 ### Visualization (Power BI)
 The Power BI dashboard includes:
@@ -28,9 +24,13 @@ The Power BI dashboard includes:
 - High-risk account behavior comparison (Top30 vs population)
 - Single-account behavioral drill-down
 
-Due to data sensitivity and platform constraints, only static screenshots are provided.
+Due to pbix file size limitations and data sensitivity, the Power BI source file is not included.
+Only static dashboard screenshots are provided for demonstration and discussion purposes.
 
-### Notes
-This project emphasizes **practical fraud modeling stability under highly imbalanced data**, 
-and focuses on making model outputs interpretable and usable in real-world monitoring scenarios.
+### Data Availability
+- The original transaction data is provided by AI CUP 2025 and is not publicly shareable
+- No raw transaction or label data is included in this repository
+- All analysis results shown are derived from competition-provided datasets under usage restrictions
+
+
 
