@@ -51,7 +51,7 @@ htmlcov/
 Thumbs.db
 
 ################################
-# VS Code (保留設定檔可選)
+# VS Code
 ################################
 .vscode/
 
@@ -61,9 +61,13 @@ Thumbs.db
 *.pbix
 
 ################################
-# Allow dashboard assets (explicit allow)
+# Dashboard assets (正確寫法)
 ################################
-dashboard/
+# ignore everything under dashboard
+dashboard/*
+# but keep the folder itself
+!dashboard/
+# allow png images
 !dashboard/*.png
 
 ################################
@@ -73,3 +77,4 @@ dashboard/
 # *.parquet
 # *.feather
 # data/
+
